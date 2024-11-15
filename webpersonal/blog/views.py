@@ -1,5 +1,8 @@
 from django.shortcuts import render, HttpResponse
-
+from .models import Post
 # Create your views here.
+
+
 def home(request):
-    return HttpResponse("Bienvenido a mi blog")
+    posts = Post.objects.all()
+    return render(request, "blog/home.html")
