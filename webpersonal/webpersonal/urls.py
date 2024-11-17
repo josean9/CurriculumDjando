@@ -22,7 +22,7 @@ from core import views
 
 urlpatterns = [
     path('', views.home, name="home"),
-    path('about-me/', views.about, name="about-me"),  # Cambiado el nombre a "about-me" para que coincida
+    path('about-me/', views.about, name="about-me"),
     path('portfolio/', views.portfolio, name="portfolio"),
     path('contact/', views.contact, name="contact"),
     path('admin/', admin.site.urls),
