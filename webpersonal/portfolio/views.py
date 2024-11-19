@@ -1,4 +1,7 @@
-from django.shortcuts import render
 
+from django.shortcuts import render
+from .models import Project
 def portfolio(request):
- return render(request, "core/portfolio.html")
+ projects = Project.objects.all()
+ return render(request, "portfolio/portfolio.html",
+ {'projects':projects}) 
