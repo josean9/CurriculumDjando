@@ -1,8 +1,26 @@
 {% extends 'core/base.html' %}
+{% load static %}
 
 {% block title %}Acerca de{% endblock %}
 
+{% block background %}{% static 'core/img/about-bg.jpg' %}{% endblock %}
+
+{% block headers %}
+<h1>Acerca de mí</h1>
+<span class="subheading">Conoce un poco más sobre mi trayectoria</span>
+{% endblock %}
+
 {% block content %}
-    <h2>Acerca de</h2>
-    <p>Me llamo Juan Pérez y me encanta Django.</p>
+<div class="row">
+    <div class="col-lg-3 col-md-4 offset-lg-1">
+        <img class="img-fluid avatar"
+            src="{% static 'core/img/avatar.jpg' %}" alt="">
+    </div>
+    <div class="col-lg-7 col-md-8">
+        <h2 class="section-heading">Jose Antonio Sánchez</h2>
+        <p>¡Hola! Soy Jose Antonio Sánchez, ingeniero y desarrollador apasionado por la tecnología y el aprendizaje continuo.</p>
+        <p>Me considero una persona curiosa, siempre dispuesta a enfrentar nuevos desafíos y encontrar soluciones innovadoras.</p>
+        <p>En esta página, te invito a descubrir más sobre mi trayectoria, mis proyectos, y cómo mi pasión por la tecnología me ha llevado a crear soluciones que aportan valor. </p>
+    </div>
+</div>
 {% endblock %}
