@@ -1,5 +1,6 @@
 # CurriculumDjando
 
+https://github.com/josean9/CurriculumDjando.git
 
 pipenv run python manage.py runserver
 pipenv run python manage.py makemigrations
