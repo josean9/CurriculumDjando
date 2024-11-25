@@ -1,21 +1,37 @@
 {% extends 'core/base.html' %}
 {% load static %}
 {% block title %}Contacto{% endblock %}
-{% block background %}{% static 'core/img/contact-bg.jpg' %}{% endblock %}
+{% block background %}{% static 'core/img/contact-bg3.jpg' %}{%endblock %}
 {% block headers %}
  <h1>Contacto</h1>
- <span class="subheading">Asesoría</span>
+ <span class="subheading">Redes sociales</span>
 {% endblock %}
+
 {% block content %}
-<div class="row">
- <div class="col-lg-8 col-md-10 mx-auto">
- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
- Saepe nostrum ullam eveniet pariatur voluptates odit, fuga
- atque ea nobis sit soluta odio, adipisci quas excepturi maxime
- quae totam ducimus consectetur?</p>
- <br>
- <p><b>Teléfono:</b> +09 876 543 210</p>
- <p><b>Honorarios:</b> 60€/h (precio base)</p>
- </div>
-</div>
+<p>Gracias por tomarte el tiempo de visitar mi página web. Si deseas conocer más sobre mis proyectos, formación, experiencia profesional o estás interesado/a en explorar posibles colaboraciones, no dudes en ponerte en contacto conmigo. 
+    Estaré encantado/a de leer tu mensaje y responderte con la mayor brevedad posible. ¡Espero saber de ti pronto!</p>
+<p>Aquí os dejo mi correo y mis redes sociales.</p>
+
+<ul class="contact-list">
+    <!-- Gmail -->
+    <li>
+        <a href="mailto:jsancesc@myuax.com" target="_blank">
+            <img src="{% static 'core/img/gmail.png' %}" alt="Gmail" width="30" height="30">
+        </a>
+    </li>
+
+    <!-- GitHub -->
+    <li>
+        <a href="https://github.com/josean9" target="_blank">
+            <img src="{% static 'core/img/github.png' %}" alt="GitHub" width="30" height="30">
+        </a>
+    </li>
+
+    <!-- LinkedIn -->
+    <li>
+        <a href="https://www.linkedin.com/in/jos%C3%A9-antonio-s%C3%A1nchez-escribano-0b4763280/" target="_blank">
+            <img src="{% static 'core/img/linkedin.png' %}" alt="LinkedIn" width="30" height="30">
+        </a>
+    </li>
+</ul>
 {% endblock %}
